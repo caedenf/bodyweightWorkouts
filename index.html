@@ -62,8 +62,8 @@
         <input id="submit" type="button" value="Submit" onclick="chooseGroups();" />
     </div>
     <br><br>
+    <h3>Generated workout:</h3> 
     <div id="generatedWorkout">
-        <h3>Generated workout:</h3> 
     </div>
     <br><br>
     <div id="stopwatch">
@@ -72,7 +72,7 @@
       <input type="button" value="Start" id="sw-go" disabled/>
     </div>
         <br><br>
-        VERSION 1.3.4
+        VERSION 1.3.5
     </center>
     <script>
         /* TO DO
@@ -175,6 +175,7 @@
             }
 
             function chooseGroups() {
+                document.getElementById("generatedWorkout").innerHTML = ""
                 var e = document.getElementById("reps");
                 var rep = e.options[e.selectedIndex].value;
                 var f = document.getElementById("sets");
