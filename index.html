@@ -38,9 +38,6 @@
         <input type="checkbox" class="muscleGroup" id="neck" value="Neck">
         <label for="neck">Neck</label>
         <br>
-        <select id="pickGroups" multiple>        
-        </select>
-        <br>
         <input id="submit" type="button" value="Submit" onclick="chooseGroups();" />
         <br>
     </div>
@@ -54,7 +51,7 @@
         //add workout timer
         //add list of last exercised muscle groups
     </div>
-        VERSION 2.4
+        VERSION 2.5
     </center>
     <script>
          fetch("data.json")
@@ -74,18 +71,15 @@
                 var stringified = JSON.stringify(data);
                 var objectified = JSON.parse(stringified);
                 exercisesArray = objectified;
-                populateChoices();
             }
-        
-            function populateChoices() {
-                for (group in muscleGroupsArray)
-                    select.options.add(new Option(muscleGroupsArray[group], muscleGroupsArray[group]));
-            }
-        
+
             function chooseGroups() {
                 document.getElementById("generatedWorkout").innerHTML += "hello";
-                var selected = document.getElementById("pickGroups").options[document.getElementById("pickGroups").selectedIndex].value;
-                document.getElementById("generatedWorkout").innerHTML += selected;
+                var selected = [];
+                $('#muscleGroups input:checked').each(function() {
+                    document.getElementById("generatedWorkout").innerHTML += "yes";
+                    selected.push($(this).val());
+                });
             }
     </script>
 </body>
