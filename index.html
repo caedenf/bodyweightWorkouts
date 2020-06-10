@@ -43,11 +43,11 @@
         <br>
         How many sets?
         <select name="sets" id="sets">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
             <option value="5">5</option>
-            <option value="10">10</option>
-            <option value="15">15</option>
-            <option value="20">20</option>
-            <option value="25">25</option>
         </select>
         <br>
         How many circuits?
@@ -73,12 +73,12 @@
         Repeat the following workout 
     </div>
         <br><br>
-    <div id="timer">
-        //add list of last exercised muscle groups
-    </div>
-        VERSION 1.2.4
+        VERSION 1.2.5
     </center>
     <script>
+        /* TO DO
+                //add list of last exercised muscle groups, store in cookies
+        */
          fetch("data.json")
                 .then(function (response) {
                     return response.json();
