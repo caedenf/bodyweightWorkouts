@@ -49,6 +49,7 @@
     </div>
     <div id="timer">
         //add workout timer
+        //add list of last exercised muscle groups
     </div>
         VERSION 1.7
     </center>
@@ -81,6 +82,10 @@
                     selected.push($(this).attr('value'));
                 });
                 $.each($("input[type='checkbox']:checked"), function(){
+                    document.getElementById("generatedWorkout").innerHTML += "yes";
+                    selected.push($(this).val());
+                });
+                $('#muscleGroups').prop('checked', function () {
                     document.getElementById("generatedWorkout").innerHTML += "yes";
                     selected.push($(this).val());
                 });
