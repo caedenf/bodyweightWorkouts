@@ -61,7 +61,7 @@
     </div>
     <br><br>
     <div id="generatedWorkout">
-        <h3>Generated workout:</h3> <br><br>
+        <h3>Generated workout:</h3> 
         Repeat the following workout 
     </div>
         <br><br>
@@ -69,7 +69,7 @@
         //add workout timer
         //add list of last exercised muscle groups
     </div>
-        VERSION 1.1.2
+        VERSION 1.1.3
     </center>
     <script>
          fetch("data.json")
@@ -166,7 +166,7 @@
                 groupOrder.push("Neck");
                 document.getElementById("workoutOrder").innerHTML += "neck ";
             }
-
+/*
             function chooseGroups() {
                 var e = document.getElementById("reps");
                 var rep = e.options[e.selectedIndex].value;
@@ -196,5 +196,6 @@
                     }
                 }
             }
+            */
     </script>
 </body>
