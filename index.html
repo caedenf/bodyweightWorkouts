@@ -50,7 +50,7 @@
     <div id="timer">
         //add workout timer
     </div>
-        VERSION 1.2
+        VERSION 1.3
     </center>
     <script>
          fetch("data.json")
@@ -74,12 +74,13 @@
             }
         
             function chooseGroups() {
+                document.getElementById("generatedWorkout").innerHTML += "hello";
                 var selected = [];
                 $('#checkboxes input:checked').each(function() {
                     selected.push($(this).attr('name'));
                 });
                 for (chosen in selected)
-                    document.getElementById("generatedWorkout").innerHTML += chosen
+                    document.getElementById("generatedWorkout").innerHTML += chosen;
             }
     </script>
 </body>
