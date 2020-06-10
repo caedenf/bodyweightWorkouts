@@ -7,36 +7,21 @@
     <center>
     <h2>Bodyweight Workout Generator</h2>
     <div id="muscleGroups">
-        <input type="checkbox" class="muscleGroup" id="biceps" value="Biceps">
-        <label for="biceps">Biceps</label>
-        <input type="checkbox" class="muscleGroup" id="triceps" value="Triceps">
-        <label for="triceps">Triceps</label>
-        <input type="checkbox" class="muscleGroup" id="forearms" value="Forearms">
-        <label for="forearms">Forearms</label>
-        <input type="checkbox" class="muscleGroup" id="shoulders" value="Shoulders">
-        <label for="shoulders">Shoulders</label>
-        <input type="checkbox" class="muscleGroup" id="traps" value="Traps">
-        <label for="traps">Traps</label>
-        <input type="checkbox" class="muscleGroup" id="chest" value="Chest">
-        <label for="chest">Chest</label>
-        <input type="checkbox" class="muscleGroup" id="abs" value="Abs">
-        <label for="abs">Abs</label>
-        <input type="checkbox" class="muscleGroup" id="back" value="Back">
-        <label for="back">Back</label>
-        <input type="checkbox" class="muscleGroup" id="lats" value="Lats">
-        <label for="lats">Lats</label>
-        <input type="checkbox" class="muscleGroup" id="quadriceps" value="Quadriceps">
-        <label for="quadriceps">Quadriceps</label>
-        <input type="checkbox" class="muscleGroup" id="glutes" value="Glutes">
-        <label for="glutes">Glutes</label>
-        <input type="checkbox" class="muscleGroup" id="legs" value="Legs">
-        <label for="legs">Legs</label>
-        <input type="checkbox" class="muscleGroup" id="hamstrings" value="Hamstrings">
-        <label for="hamstrings">Hamstrings</label>
-        <input type="checkbox" class="muscleGroup" id="calves" value="Calves">
-        <label for="calves">Calves</label>
-        <input type="checkbox" class="muscleGroup" id="neck" value="Neck">
-        <label for="neck">Neck</label>
+        <input id="biceps" type="button" value="Biceps" onclick="chooseBiceps();" />
+        <input id="triceps" type="button" value="Triceps" onclick="chooseTriceps();" />
+        <input id="forearms" type="button" value="Forearms" onclick="chooseForearms();" />
+        <input id="shoulders" type="button" value="Shoulders" onclick="chooseShoulders();" />
+        <input id="traps" type="button" value="Traps" onclick="chooseTraps();" />
+        <input id="chest" type="button" value="Chest" onclick="chooseChest();" />
+        <input id="abs" type="button" value="Abs" onclick="chooseAbs();" />
+        <input id="back" type="button" value="Back" onclick="chooseBack();" />
+        <input id="lats" type="button" value="Lats" onclick="chooseLats();" />
+        <input id="quadriceps" type="button" value="Quadriceps" onclick="chooseQuadriceps();" />
+        <input id="glutes" type="button" value="Glutes" onclick="chooseGlutes();" />
+        <input id="legs" type="button" value="Legs" onclick="chooseLegs();" />
+        <input id="hamstrings" type="button" value="Hamstrings" onclick="chooseHamstrings();" />
+        <input id="calves" type="button" value="Calves" onclick="chooseCalves();" />
+        <input id="neck" type="button" value="Neck" onclick="chooseNeck();" />
         <br>
         <input id="submit" type="button" value="Submit" onclick="chooseGroups();" />
         <br>
@@ -51,7 +36,7 @@
         //add workout timer
         //add list of last exercised muscle groups
     </div>
-        VERSION 1.0.4 
+        VERSION 1.0.5
     </center>
     <script>
          fetch("data.json")
@@ -66,23 +51,21 @@
                 });
             
             var exercisesArray = [];
+            var groupOrder = [];
             var muscleGroupsArray = ["Biceps", "Triceps", "Forearms", "Shoulders", "Traps", "Chest", "Abs", "Back", "Lats", "Quadriceps", "Glutes", "Legs", "Hamstrings", "Calves", "Neck"];
             function showData(data) {
                 var stringified = JSON.stringify(data);
                 var objectified = JSON.parse(stringified);
                 exercisesArray = objectified;
             }
+        
+            function chooseBiceps() {
+                groupOrder.push("Biceps");
+            }
 
             function chooseGroups() {
-                document.getElementById("generatedWorkout").innerHTML += "hello";
-                var selected = [];
-                document.getElementById("muscleGroups").children("input:checked").map(function() {
-                    document.getElementById("generatedWorkout").innerHTML += this.name;
-                });
-                document.getElementById("muscleGroups").find("input:checked").each(function() {
-                    document.getElementById("generatedWorkout").innerHTML += "yes";
-                    selected.push($(this).val());
-                });
+                for (group in groupOrder)
+                    document.getElementById("generatedWorkout").innerHTML += groupOrder[group];
             }
     </script>
 </body>
