@@ -69,7 +69,7 @@
         //add workout timer
         //add list of last exercised muscle groups
     </div>
-        VERSION 1.2.1
+        VERSION 1.2.2
     </center>
     <script>
          fetch("data.json")
@@ -175,7 +175,7 @@
                 var g = document.getElementById("circuits");
                 var circuit = g.options[g.selectedIndex].value;
                 document.getElementById("generatedWorkout").innerHTML += circuit;
-                document.getElementById("generatedWorkout").innerHTML += "times<br><br>";
+                document.getElementById("generatedWorkout").innerHTML += " times<br><br>";
                 for (group in groupOrder) {
                     var groupExercises = [];
                     for (var i = 0; i < exercisesArray.length; i++) {
@@ -190,9 +190,9 @@
                         document.getElementById("generatedWorkout").innerHTML += "1 minute";
                     } else {
                         document.getElementById("generatedWorkout").innerHTML += rep;
-                        document.getElementById("generatedWorkout").innerHTML += " reps and ";
+                        document.getElementById("generatedWorkout").innerHTML += " reps / ";
                         document.getElementById("generatedWorkout").innerHTML += set;
-                        document.getElementById("generatedWorkout").innerHTML += " sets";
+                        document.getElementById("generatedWorkout").innerHTML += " sets<br>";
                     }
                 }
             }
