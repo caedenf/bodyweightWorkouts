@@ -2,6 +2,8 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bodyweight Workout Generator</title>
+    <link href="stopwatch.css" rel="stylesheet">
+    <script src="stopwatch.js"></script>
 </head>
 <body>
     <center>
@@ -60,16 +62,21 @@
         <input id="submit" type="button" value="Submit" onclick="chooseGroups();" />
     </div>
     <br><br>
+    <div id="stopwatch">
+      <div id="sw-time">00:00:00</div>
+      <input type="button" value="Reset" id="sw-rst" disabled/>
+      <input type="button" value="Start" id="sw-go" disabled/>
+    </div>
+    <br><br>
     <div id="generatedWorkout">
         <h3>Generated workout:</h3> 
         Repeat the following workout 
     </div>
         <br><br>
     <div id="timer">
-        //add workout timer
         //add list of last exercised muscle groups
     </div>
-        VERSION 1.2.2
+        VERSION 1.2.4
     </center>
     <script>
          fetch("data.json")
@@ -187,7 +194,7 @@
                     document.getElementById("generatedWorkout").innerHTML += groupExercises[random].exercise;
                     document.getElementById("generatedWorkout").innerHTML += " for ";
                     if (groupExercises[random].type == "hold") {
-                        document.getElementById("generatedWorkout").innerHTML += "1 minute";
+                        document.getElementById("generatedWorkout").innerHTML += "1 minute<br>";
                     } else {
                         document.getElementById("generatedWorkout").innerHTML += rep;
                         document.getElementById("generatedWorkout").innerHTML += " reps / ";
