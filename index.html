@@ -4,11 +4,50 @@
         <title>Bodyweight Workout Generator</title>
     </head>
 <body>
-<center>
-<h2>Bodyweight Workout Generator</2>
-//insert muscle groups option selector here, or random
-//insert options for reps / sets / circuits
-//print generated workout
-//add workout timer
-</center>
+    <center>
+    <h2>Bodyweight Workout Generator</h2>
+    <div id="muscleGroups">
+        //insert muscle groups option selector here, or random
+        <select id="pickGenre" multiple>        
+        </select>
+        <input id="submit" type="button" value="Submit" onclick="showResults();" />
+    </div>
+    <div id="repsCircuits">
+        //insert options for reps / sets / circuits
+    </div>
+    <div id="generatedWorkout">
+        //print generated workout
+    </div>
+    <div id="timer">
+        //add workout timer
+    </div>
+    </center>
+    <script>
+         fetch("data.json")
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (data) {
+                    showData(data);
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });
+            
+            var exercisesArray = [];
+            var muscleGroupsArray = ["Biceps", "Triceps", "Forearms", "Shoulders", "Traps", "Chest", "Abs", "Back", "Lats", "Quadriceps", "Glutes", "Legs", "Hamstrings", "Calves", "Neck"];
+            function showData(data) {
+                var stringified = JSON.stringify(data);
+                var objectified = JSON.parse(stringified);
+                exercisesArray = objectified;
+                populateChoices();
+            }
+        
+            function populateChoices() {
+                for (group in muscleGroupsArray)
+                    select.options.add(new Option(muscleGroupsArray[group], muscleGroupsArray[group]));
+            }
+    </script>
+}
 </body>
+</html>
