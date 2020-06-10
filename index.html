@@ -10,7 +10,7 @@
         //insert muscle groups option selector here, or random
         <select id="pickGenre" multiple>        
         </select>
-        <input id="submit" type="button" value="Submit" onclick="showResults();" />
+        <input id="submit" type="button" value="Submit" onclick="chooseGroups();" />
     </div>
     <div id="repsCircuits">
         //insert options for reps / sets / circuits
@@ -46,6 +46,10 @@
             function populateChoices() {
                 for (group in muscleGroupsArray)
                     select.options.add(new Option(muscleGroupsArray[group], muscleGroupsArray[group]));
+            }
+        
+            function chooseGroups() {
+                
             }
     </script>
 </body>
