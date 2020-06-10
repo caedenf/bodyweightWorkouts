@@ -62,18 +62,18 @@
         <input id="submit" type="button" value="Submit" onclick="chooseGroups();" />
     </div>
     <br><br>
+    <div id="generatedWorkout">
+        <h3>Generated workout:</h3> 
+        Repeat the following workout 
+    </div>
+    <br><br>
     <div id="stopwatch">
       <div id="sw-time">00:00:00</div>
       <input type="button" value="Reset" id="sw-rst" disabled/>
       <input type="button" value="Start" id="sw-go" disabled/>
     </div>
-    <br><br>
-    <div id="generatedWorkout">
-        <h3>Generated workout:</h3> 
-        Repeat the following workout 
-    </div>
         <br><br>
-        VERSION 1.2.5
+        VERSION 1.2.6
     </center>
     <script>
         /* TO DO
@@ -201,6 +201,7 @@
                         document.getElementById("generatedWorkout").innerHTML += set;
                         document.getElementById("generatedWorkout").innerHTML += " sets<br>";
                     }
+                    document.getElementById("generatedWorkout").innerHTML += "<br>";
                 }
             }
     </script>
