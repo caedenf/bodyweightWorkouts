@@ -76,7 +76,7 @@
             function chooseGroups() {
                 document.getElementById("generatedWorkout").innerHTML += "hello";
                 var selected = [];
-                $("#muscleGroups").children("input:checked").map(function() {
+                document.getElementById("muscleGroups").children("input:checked").map(function() {
                     document.getElementById("generatedWorkout").innerHTML += this.name;
                 });
                 document.getElementById("muscleGroups").find("input:checked").each(function() {
