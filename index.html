@@ -8,8 +8,37 @@
     <h2>Bodyweight Workout Generator</h2>
     <div id="muscleGroups">
         //insert muscle groups option selector here, or random
-        <select id="pickGenre" multiple>        
-        </select>
+        <input type="checkbox" id="biceps" value="Biceps">
+        <label for="biceps">Biceps</label>
+        <input type="checkbox" id="triceps" value="Triceps">
+        <label for="triceps">Triceps</label>
+        <input type="checkbox" id="forearms" value="Forearms">
+        <label for="forearms">Forearms</label>
+        <input type="checkbox" id="shoulders" value="Shoulders">
+        <label for="shoulders">Shoulders</label>
+        <input type="checkbox" id="traps" value="Traps">
+        <label for="traps">Traps</label>
+        <input type="checkbox" id="chest" value="Chest">
+        <label for="chest">Chest</label>
+        <input type="checkbox" id="abs" value="Abs">
+        <label for="abs">Abs</label>
+        <input type="checkbox" id="back" value="Back">
+        <label for="back">Back</label>
+        <input type="checkbox" id="lats" value="Lats">
+        <label for="lats">Lats</label>
+        <input type="checkbox" id="quadriceps" value="Quadriceps">
+        <label for="quadriceps">Quadriceps</label>
+        <input type="checkbox" id="glutes" value="Glutes">
+        <label for="glutes">Glutes</label>
+        <input type="checkbox" id="legs" value="Legs">
+        <label for="legs">Legs</label>
+        <input type="checkbox" id="hamstrings" value="Hamstrings">
+        <label for="hamstrings">Hamstrings</label>
+        <input type="checkbox" id="calves" value="Calves">
+        <label for="calves">Calves</label>
+        <input type="checkbox" id="neck" value="Neck">
+        <label for="neck">Neck</label>
+        <br>
         <input id="submit" type="button" value="Submit" onclick="chooseGroups();" />
     </div>
     <div id="repsCircuits">
@@ -21,6 +50,7 @@
     <div id="timer">
         //add workout timer
     </div>
+        VERSION 1.1
     </center>
     <script>
          fetch("data.json")
@@ -41,11 +71,6 @@
                 var objectified = JSON.parse(stringified);
                 exercisesArray = objectified;
                 populateChoices();
-            }
-        
-            function populateChoices() {
-                for (group in muscleGroupsArray)
-                    select.options.add(new Option(muscleGroupsArray[group], muscleGroupsArray[group]));
             }
         
             function chooseGroups() {
