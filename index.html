@@ -72,7 +72,7 @@
       <input type="button" value="Start" id="sw-go" disabled/>
     </div>
         <br><br>
-        VERSION 1.3.2
+        VERSION 1.3.3
     </center>
     <script>
         /* TO DO
@@ -201,11 +201,9 @@
                         document.getElementById("generatedWorkout").innerHTML += set;
                         document.getElementById("generatedWorkout").innerHTML += " sets ";
                     }
-                    /*
-                    for (var i = 0, i < circuit, i++) {
-                        document.getElementById("generatedWorkout").innerHTML += "<input type='checkbox' id='placeholder' name='placeholder' value='placeholder'>";
+                    for (var j = 0, j < circuit, j++) {
+                        document.getElementById("generatedWorkout").innerHTML += "<input type='checkbox' id='placeholder' name='placeholder' value='placeholder'><label for='placeholder'> </label>";
                     }
-                    */
                     document.getElementById("generatedWorkout").innerHTML += "<br><br>";
                 }
             }
