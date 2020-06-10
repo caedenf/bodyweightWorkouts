@@ -69,7 +69,7 @@
         //add workout timer
         //add list of last exercised muscle groups
     </div>
-        VERSION 1.1.1
+        VERSION 1.1.2
     </center>
     <script>
          fetch("data.json")
@@ -174,7 +174,8 @@
                 var set = e.options[e.selectedIndex].value;
                 var e = document.getElementById("circuits");
                 var circuit = e.options[e.selectedIndex].value;
-                document.getElementById("generatedWorkout").innerHTML += circuit + "times<br><br>;
+                document.getElementById("generatedWorkout").innerHTML += circuit;
+                document.getElementById("generatedWorkout").innerHTML += "times<br><br>;
                 for (group in groupOrder) {
                     var groupExercises = [];
                     for (var i = 0; i < exercisesArray.length; i++) {
@@ -183,11 +184,15 @@
                         }
                     }
                     var random = Math.floor((Math.random() * groupExercises.length) + 1)-1;
-                    document.getElementById("generatedWorkout").innerHTML += groupExercises[random].exercise + " for ";
+                    document.getElementById("generatedWorkout").innerHTML += groupExercises[random].exercise;
+                    document.getElementById("generatedWorkout").innerHTML += " for ";
                     if (groupExercises[random].type == "hold") {
                         document.getElementById("generatedWorkout").innerHTML += "1 minute";
                     } else {
-                        document.getElementById("generatedWorkout").innerHTML += rep + " reps and " + set + " sets";
+                        document.getElementById("generatedWorkout").innerHTML += rep;
+                        document.getElementById("generatedWorkout").innerHTML += " reps and ";
+                        document.getElementById("generatedWorkout").innerHTML += set;
+                        document.getElementById("generatedWorkout").innerHTML += " sets";
                     }
                 }
             }
