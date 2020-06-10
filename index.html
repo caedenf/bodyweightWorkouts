@@ -7,6 +7,7 @@
     <center>
     <h2>Bodyweight Workout Generator</h2>
     <div id="muscleGroups">
+        Click the muscle groups you would like to exercise:<br>
         <input id="biceps" type="button" value="Biceps" onclick="chooseBiceps();" />
         <input id="triceps" type="button" value="Triceps" onclick="chooseTriceps();" />
         <input id="forearms" type="button" value="Forearms" onclick="chooseForearms();" />
@@ -26,8 +27,15 @@
         <input id="submit" type="button" value="Submit" onclick="chooseGroups();" />
         <br>
     </div>
+    <div id="workoutOrder">
+        Workout order: 
+    </div>
+    <br>
     <div id="repsCircuits">
         //insert options for reps / sets / circuits
+        How many reps? <br>
+        How many sets?<br>
+        How many circuits?<br>
     </div>
     <div id="generatedWorkout">
         //print generated workout
@@ -36,7 +44,7 @@
         //add workout timer
         //add list of last exercised muscle groups
     </div>
-        VERSION 1.0.6
+        VERSION 1.0.7
     </center>
     <script>
          fetch("data.json")
@@ -61,22 +69,81 @@
         
             function chooseBiceps() {
                 groupOrder.push("Biceps");
-                document.getElementById("generatedWorkout").innerHTML += "biceps";
+                document.getElementById("workoutOrder").innerHTML += "biceps ";
             }
         
             function chooseTriceps() {
                 groupOrder.push("Triceps");
-                document.getElementById("generatedWorkout").innerHTML += "triceps";
+                document.getElementById("workoutOrder").innerHTML += "triceps ";
             }
         
             function chooseForearms() {
                 groupOrder.push("Forearms");
-                document.getElementById("generatedWorkout").innerHTML += "forearms";
+                document.getElementById("workoutOrder").innerHTML += "forearms ";
+            }
+        
+            function chooseShoulders() {
+                groupOrder.push("Shoulders");
+                document.getElementById("workoutOrder").innerHTML += "shoulder ";
+            }
+        
+            function chooseTraps() {
+                groupOrder.push("Traps");
+                document.getElementById("workoutOrder").innerHTML += "traps ";
+            }
+        
+            function chooseChest() {
+                groupOrder.push("Chest");
+                document.getElementById("workoutOrder").innerHTML += "chest ";
+            }
+        
+            function chooseAbs() {
+                groupOrder.push("Abs");
+                document.getElementById("workoutOrder").innerHTML += "abs ";
+            }
+        
+            function chooseBack() {
+                groupOrder.push("Back");
+                document.getElementById("workoutOrder").innerHTML += "back ";
+            }
+        
+            function chooseLats() {
+                groupOrder.push("Lats");
+                document.getElementById("workoutOrder").innerHTML += "lats ";
+            }
+        
+            function chooseQuadriceps() {
+                groupOrder.push("Quadriceps");
+                document.getElementById("workoutOrder").innerHTML += "quadriceps ";
+            }
+        
+            function chooseGlutes() {
+                groupOrder.push("Glutes");
+                document.getElementById("workoutOrder").innerHTML += "glutes ";
+            }
+        
+            function chooseLegs() {
+                groupOrder.push("Legs");
+                document.getElementById("workoutOrder").innerHTML += "legs ";
+            }
+        
+            function chooseHamstrings() {
+                groupOrder.push("Hamstrings");
+                document.getElementById("workoutOrder").innerHTML += "hamstrings ";
+            }
+        
+            function chooseCalves() {
+                groupOrder.push("Calves");
+                document.getElementById("workoutOrder").innerHTML += "calves ";
+            }
+        
+            function chooseNeck() {
+                groupOrder.push("Neck");
+                document.getElementById("workoutOrder").innerHTML += "neck ";
             }
 
             function chooseGroups() {
-                for (group in groupOrder)
-                    document.getElementById("generatedWorkout").innerHTML += groupOrder[group];
+ 
             }
     </script>
 </body>
