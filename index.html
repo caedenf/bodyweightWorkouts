@@ -72,7 +72,7 @@
       <input type="button" value="Start" id="sw-go" disabled/>
     </div>
         <br><br>
-        VERSION 1.2.6
+        VERSION 1.2.7
     </center>
     <script>
         /* TO DO
@@ -194,14 +194,17 @@
                     document.getElementById("generatedWorkout").innerHTML += groupExercises[random].exercise;
                     document.getElementById("generatedWorkout").innerHTML += " for ";
                     if (groupExercises[random].type == "hold") {
-                        document.getElementById("generatedWorkout").innerHTML += "1 minute<br>";
+                        document.getElementById("generatedWorkout").innerHTML += "1 minute ";
                     } else {
                         document.getElementById("generatedWorkout").innerHTML += rep;
                         document.getElementById("generatedWorkout").innerHTML += " reps / ";
                         document.getElementById("generatedWorkout").innerHTML += set;
-                        document.getElementById("generatedWorkout").innerHTML += " sets<br>";
+                        document.getElementById("generatedWorkout").innerHTML += " sets ";
                     }
-                    document.getElementById("generatedWorkout").innerHTML += "<br>";
+                    for (var i = 0, i < circuit, i++) {
+                        document.getElementById("generatedWorkout").innerHTML += "<input type='checkbox'>";
+                    }
+                    document.getElementById("generatedWorkout").innerHTML += "<br><br>";
                 }
             }
     </script>
