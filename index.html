@@ -7,7 +7,7 @@
     <center>
     <h2>Bodyweight Workout Generator</h2>
     <div id="muscleGroups">
-        Click the muscle groups you would like to exercise:<br>
+        Click the muscle groups you would like to exercise:<br><br>
         <input id="biceps" type="button" value="Biceps" onclick="chooseBiceps();" />
         <input id="triceps" type="button" value="Triceps" onclick="chooseTriceps();" />
         <input id="forearms" type="button" value="Forearms" onclick="chooseForearms();" />
@@ -23,20 +23,43 @@
         <input id="hamstrings" type="button" value="Hamstrings" onclick="chooseHamstrings();" />
         <input id="calves" type="button" value="Calves" onclick="chooseCalves();" />
         <input id="neck" type="button" value="Neck" onclick="chooseNeck();" />
-        <br>
-        <input id="submit" type="button" value="Submit" onclick="chooseGroups();" />
-        <br>
+        <br><br>
     </div>
     <div id="workoutOrder">
         Workout order: 
     </div>
-    <br>
+    <br><br>
     <div id="repsCircuits">
-        //insert options for reps / sets / circuits
-        How many reps? <br>
-        How many sets?<br>
-        How many circuits?<br>
+        How many reps? 
+        <select name="reps" id="reps">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+        </select>
+        <br>
+        How many sets?
+        <select name="sets" id="sets">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+        </select>
+        <br>
+        How many circuits?
+        <select name="circuits" id="circuits">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <br>
+        <input id="submit" type="button" value="Submit" onclick="chooseGroups();" />
     </div>
+    <br>
     <div id="generatedWorkout">
         //print generated workout
     </div>
@@ -44,7 +67,7 @@
         //add workout timer
         //add list of last exercised muscle groups
     </div>
-        VERSION 1.0.7
+        VERSION 1.0.8
     </center>
     <script>
          fetch("data.json")
@@ -143,7 +166,11 @@
             }
 
             function chooseGroups() {
- 
+                //get rep/set/circuit info and set to variables
+                var e = document.getElementById("reps");
+                var strUser = e.options[e.selectedIndex].value;
+                var rep = strUser
+                document.getElementById("workoutOrder").innerHTML += rep;
             }
     </script>
 </body>
