@@ -50,7 +50,7 @@
     <div id="timer">
         //add workout timer
     </div>
-        VERSION 1.5
+        VERSION 1.6
     </center>
     <script>
          fetch("data.json")
@@ -77,6 +77,7 @@
                 document.getElementById("generatedWorkout").innerHTML += "hello";
                 var selected = [];
                 $('#muscleGroups input:checked').each(function() {
+                    document.getElementById("generatedWorkout").innerHTML += "yes";
                     selected.push($(this).attr('value'));
                 });
                 for (chosen in selected)
