@@ -7,7 +7,6 @@
     <center>
     <h2>Bodyweight Workout Generator</h2>
     <div id="muscleGroups">
-        //insert muscle groups option selector here, or random
         <input type="checkbox" id="biceps" value="Biceps">
         <label for="biceps">Biceps</label>
         <input type="checkbox" id="triceps" value="Triceps">
@@ -40,6 +39,7 @@
         <label for="neck">Neck</label>
         <br>
         <input id="submit" type="button" value="Submit" onclick="chooseGroups();" />
+        <br>
     </div>
     <div id="repsCircuits">
         //insert options for reps / sets / circuits
@@ -50,7 +50,7 @@
     <div id="timer">
         //add workout timer
     </div>
-        VERSION 1.1
+        VERSION 1.2
     </center>
     <script>
          fetch("data.json")
@@ -74,7 +74,12 @@
             }
         
             function chooseGroups() {
-                
+                var selected = [];
+                $('#checkboxes input:checked').each(function() {
+                    selected.push($(this).attr('name'));
+                });
+                for (chosen in selected)
+                    document.getElementById("generatedWorkout").innerHTML += chosen
             }
     </script>
 </body>
