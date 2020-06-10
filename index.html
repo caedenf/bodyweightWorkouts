@@ -182,7 +182,7 @@
                 var g = document.getElementById("circuits");
                 var circuit = g.options[g.selectedIndex].value;
                 document.getElementById("generatedWorkout").innerHTML += circuit;
-                document.getElementById("generatedWorkout").innerHTML += " times<br><br>";
+                document.getElementById("generatedWorkout").innerHTML += " time(s)<br><br>";
                 for (group in groupOrder) {
                     var groupExercises = [];
                     for (var i = 0; i < exercisesArray.length; i++) {
