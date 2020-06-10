@@ -64,7 +64,6 @@
     <br><br>
     <div id="generatedWorkout">
         <h3>Generated workout:</h3> 
-        Repeat the following workout 
     </div>
     <br><br>
     <div id="stopwatch">
@@ -181,6 +180,7 @@
                 var set = f.options[f.selectedIndex].value;
                 var g = document.getElementById("circuits");
                 var circuit = g.options[g.selectedIndex].value;
+                document.getElementById("generatedWorkout").innerHTML += "Repeat the following workout ";
                 document.getElementById("generatedWorkout").innerHTML += circuit;
                 document.getElementById("generatedWorkout").innerHTML += " time(s)<br><br>";
                 for (group in groupOrder) {
