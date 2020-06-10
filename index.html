@@ -76,6 +76,7 @@
     </center>
     <script>
         /* TO DO
+                //add checkboxes or some other way of keeping track of circuits
                 //add list of last exercised muscle groups, store in cookies
         */
          fetch("data.json")
@@ -200,9 +201,6 @@
                         document.getElementById("generatedWorkout").innerHTML += " reps / ";
                         document.getElementById("generatedWorkout").innerHTML += set;
                         document.getElementById("generatedWorkout").innerHTML += " sets ";
-                    }
-                    for (var j = 0, j < circuit, j++) {
-                        document.getElementById("generatedWorkout").innerHTML += "<input type='checkbox' id='placeholder' name='placeholder' value='placeholder'><label for='placeholder'> </label>";
                     }
                     document.getElementById("generatedWorkout").innerHTML += "<br><br>";
                 }
