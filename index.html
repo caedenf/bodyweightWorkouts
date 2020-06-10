@@ -61,13 +61,15 @@
     </div>
     <br>
     <div id="generatedWorkout">
-        //print generated workout
+        <h3>Generated workout:</h3> <br><br>
+        Repeat the following workout 
     </div>
+        <br><br>
     <div id="timer">
         //add workout timer
         //add list of last exercised muscle groups
     </div>
-        VERSION 1.0.8
+        VERSION 1.0.9
     </center>
     <script>
          fetch("data.json")
@@ -166,11 +168,25 @@
             }
 
             function chooseGroups() {
-                //get rep/set/circuit info and set to variables
                 var e = document.getElementById("reps");
-                var strUser = e.options[e.selectedIndex].value;
-                var rep = strUser
-                document.getElementById("workoutOrder").innerHTML += rep;
+                var rep = e.options[e.selectedIndex].value;
+                var e = document.getElementById("sets");
+                var set = e.options[e.selectedIndex].value;
+                var e = document.getElementById("circuits");
+                var circuit = e.options[e.selectedIndex].value;
+                document.getElementById("workoutOrder").innerHTML += circuit;
+                document.getElementById("workoutOrder").innerHTML += " times<br><br>";
+                for (group in groupOrder) {
+                    var groupExercises = [];
+                    for (var i = 0; i < exercisesArray.length; i++) {
+                        if (exercisesArray[i].group == groupOrder[group]) {
+                            groupExercises.push(exercisesArray[i]);
+                        }
+                    }
+                    var random = Math.floor((Math.random() * groupExercises.length) + 1)-1;
+                    document.getElementById("workoutOrder").innerHTML += groupExercises[random];
+                    document.getElementById("workoutOrder").innerHTML += "<br>";
+                }
             }
     </script>
 </body>
