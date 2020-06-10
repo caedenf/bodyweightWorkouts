@@ -1,0 +1,465 @@
+[{
+  "exercise":"Door curls",
+  "group":"Biceps",
+  "type":"reps"
+ },
+ {
+  "exercise":"Standing leg curls",
+  "group":"Biceps",
+  "type":"reps"
+ },
+ {
+  "exercise":"Alternating upright leg curls",
+  "group":"Biceps",
+  "type":"reps"
+ },
+ {
+  "exercise":"Close leg curls",
+  "group":"Biceps",
+  "type":"reps"
+ },
+ {
+  "exercise":"Tricep dips",
+  "group":"Triceps",
+  "type":"reps"
+ },
+ {
+  "exercise":"Tricep stretch",
+  "group":"Triceps",
+  "type":"hold"
+ },
+ {
+  "exercise":"Tricep side stretch",
+  "group":"Triceps",
+  "type":"hold"
+ },
+ {
+  "exercise":"Leg push outs",
+  "group":"Triceps",
+  "type":"reps"
+ },
+ {
+  "exercise":"Tension dips",
+  "group":"Triceps",
+  "type":"reps"
+ },
+ {
+  "exercise":"Kneeling forearm stretch",
+  "group":"Forearms",
+  "type":"hold"
+ },
+ {
+  "exercise":"Wrist circles",
+  "group":"Forearms",
+  "type":"reps"
+ },
+  {
+  "exercise":"Inner wrist circles",
+  "group":"Forearms",
+  "type":"reps"
+ },
+  {
+  "exercise":"Wrist curls",
+  "group":"Forearms",
+  "type":"reps"
+ },
+  {
+  "exercise":"Upward stretch",
+  "group":"Shoulders",
+  "type":"hold"
+ },
+   {
+  "exercise":"Shoulder circles",
+  "group":"Shoulders",
+  "type":"reps"
+ },
+   {
+  "exercise":"Cross body shoulder stretch",
+  "group":"Shoulders",
+  "type":"hold"
+ },
+   {
+  "exercise":"Arm circles",
+  "group":"Shoulders",
+  "type":"reps"
+ },
+   {
+  "exercise":"Shoulder raises",
+  "group":"Shoulders",
+  "type":"reps"
+ },
+   {
+  "exercise":"Front twist raises",
+  "group":"Shoulders",
+  "type":"reps"
+ },
+   {
+  "exercise":"Prayer pushes",
+  "group":"Shoulders",
+  "type":"reps"
+ },
+   {
+  "exercise":"Arm scissors",
+  "group":"Shoulders",
+  "type":"reps"
+ },
+   {
+  "exercise":"Upright pull row",
+  "group":"Shoulders",
+  "type":"reps"
+ },
+   {
+  "exercise":"Overhead clap shrugs",
+  "group":"Traps",
+  "type":"reps"
+ },
+ {
+  "exercise":"Pull behind shrugs",
+  "group":"Traps",
+  "type":"reps"
+ },
+ {
+  "exercise":"Arm raises",
+  "group":"Traps",
+  "type":"reps"
+ },
+ {
+  "exercise":"Upright prayer rows",
+  "group":"Traps",
+  "type":"reps"
+ },
+ {
+  "exercise":"Push ups",
+  "group":"Chest",
+  "type":"reps"
+ },
+ {
+  "exercise":"Decline push ups",
+  "group":"Chest",
+  "type":"reps"
+ },
+ {
+  "exercise":"Incline push ups",
+  "group":"Chest",
+  "type":"reps"
+ },
+ {
+  "exercise":"Isometric chest squeezes",
+  "group":"Chest",
+  "type":"reps"
+ },
+ {
+  "exercise":"Box push ups",
+  "group":"Chest",
+  "type":"reps"
+ },
+ {
+  "exercise":"Wall push ups",
+  "group":"Chest",
+  "type":"reps"
+ },
+ {
+  "exercise":"Pec crushers",
+  "group":"Chest",
+  "type":"reps"
+ },
+ {
+  "exercise":"Plank",
+  "group":"Abs",
+  "type":"hold"
+ },
+ {
+  "exercise":"Elbow plank",
+  "group":"Abs",
+  "type":"hold"
+ },
+ {
+  "exercise":"Cross body crunch",
+  "group":"Abs",
+  "type":"reps"
+ },
+ {
+  "exercise":"Crunches",
+  "group":"Abs",
+  "type":"reps"
+ },
+ {
+  "exercise":"Mountain climbers",
+  "group":"Abs",
+  "type":"hold"
+ },
+ {
+  "exercise":"Reverse crunch",
+  "group":"Abs",
+  "type":"reps"
+ },
+ {
+  "exercise":"Side bridges",
+  "group":"Abs",
+  "type":"hold"
+ },
+ {
+  "exercise":"Flutter kicks",
+  "group":"Abs",
+  "type":"reps"
+ },
+ {
+  "exercise":"Crunches with hands overhead",
+  "group":"Abs",
+  "type":"reps"
+ },
+ {
+  "exercise":"Russian twists",
+  "group":"Abs",
+  "type":"reps"
+ },
+ {
+  "exercise":"Leg raises",
+  "group":"Abs",
+  "type":"reps"
+ },
+ {
+  "exercise":"Straight arm plank",
+  "group":"Abs",
+  "type":"hold"
+ },
+ {
+  "exercise":"Jump lunges",
+  "group":"Abs",
+  "type":"reps"
+ },
+ {
+  "exercise":"Plank leg raise",
+  "group":"Abs",
+  "type":"hold"
+ },
+ {
+  "exercise":"Heel touches",
+  "group":"Abs",
+  "type":"reps"
+ },
+ {
+  "exercise":"Extended legs crunches",
+  "group":"Abs",
+  "type":"reps"
+ },
+ {
+  "exercise":"Side plank",
+  "group":"Abs",
+  "type":"hold"
+ },
+ {
+  "exercise":"Upper back stretch",
+  "group":"Back",
+  "type":"hold"
+ },
+ {
+  "exercise":"Supermans",
+  "group":"Back",
+  "type":"reps"
+ },
+ {
+  "exercise":"Superman hold",
+  "group":"Back",
+  "type":"hold"
+ },
+ {
+  "exercise":"Back hyperextensions",
+  "group":"Back",
+  "type":"reps"
+ },
+ {
+  "exercise":"Elbow rows",
+  "group":"Back",
+  "type":"reps"
+ },
+ {
+  "exercise":"Seal push ups",
+  "group":"Back",
+  "type":"reps"
+ },
+ {
+  "exercise":"Dynamic back stretch",
+  "group":"Lats",
+  "type":"hold"
+ },
+ {
+  "exercise":"Chair lower back stretch",
+  "group":"Lats",
+  "type":"hold"
+ },
+ {
+  "exercise":"Standing side bend stretch",
+  "group":"Lats",
+  "type":"hold"
+ },
+ {
+  "exercise":"Side-lying floor stretch",
+  "group":"Lats",
+  "type":"hold"
+ },
+ {
+  "exercise":"Burpees",
+  "group":"Quadriceps",
+  "type":"reps"
+ },
+ {
+  "exercise":"Jumping jacks",
+  "group":"Quadriceps",
+  "type":"hold"
+ },
+ {
+  "exercise":"Forward lunges",
+  "group":"Quadriceps",
+  "type":"reps"
+ },
+ {
+  "exercise":"Reverse lunges",
+  "group":"Quadriceps",
+  "type":"reps"
+ },
+ {
+  "exercise":"Squats",
+  "group":"Quadriceps",
+  "type":"reps"
+ },
+ {
+  "exercise":"Sumo squats",
+  "group":"Quadriceps",
+  "type":"reps"
+ },
+ {
+  "exercise":"Jump squats",
+  "group":"Quadriceps",
+  "type":"reps"
+ },
+ {
+  "exercise":"Lateral lunges",
+  "group":"Quadriceps",
+  "type":"reps"
+ },
+ {
+  "exercise":"High knees",
+  "group":"Quadriceps",
+  "type":"hold"
+ },
+ {
+  "exercise":"Glute bridges",
+  "group":"Glutes",
+  "type":"reps"
+ },
+ {
+  "exercise":"Single leg glute bridges",
+  "group":"Glutes",
+  "type":"reps"
+ },
+ {
+  "exercise":"Glute kickbacks",
+  "group":"Glutes",
+  "type":"reps"
+ },
+ {
+  "exercise":"Standing hip extension",
+  "group":"Glutes",
+  "type":"hold"
+ },
+ {
+  "exercise":"Lunge kicks",
+  "group":"Glutes",
+  "type":"reps"
+ },
+ {
+  "exercise":"Side leg raises",
+  "group":"Glutes",
+  "type":"reps"
+ },
+ {
+  "exercise":"Hip thrusts",
+  "group":"Glutes",
+  "type":"reps"
+ },
+ {
+  "exercise":"Single leg hip thrusts",
+  "group":"Glutes",
+  "type":"reps"
+ },
+ {
+  "exercise":"Donkey kicks",
+  "group":"Glutes",
+  "type":"reps"
+ },
+ {
+  "exercise":"Lying hip abductions",
+  "group":"Glutes",
+  "type":"reps"
+ },
+ {
+  "exercise":"Lying hip adductions",
+  "group":"Glutes",
+  "type":"reps"
+ },
+ {
+  "exercise":"Straight leg deadlifts",
+  "group":"Legs",
+  "type":"reps"
+ },
+ {
+  "exercise":"Squat hold",
+  "group":"Legs",
+  "type":"hold"
+ },
+ {
+  "exercise":"Standing tension leg curls",
+  "group":"Legs",
+  "type":"reps"
+ },
+ {
+  "exercise":"Standing leg swings",
+  "group":"Hamstrings",
+  "type":"reps"
+ },
+ {
+  "exercise":"Inchworms",
+  "group":"Hamstrings",
+  "type":"reps"
+ },
+ {
+  "exercise":"Standing hamstring stretch",
+  "group":"Hamstrings",
+  "type":"hold"
+ },
+ {
+  "exercise":"Calf raises",
+  "group":"Calves",
+  "type":"reps"
+ },
+ {
+  "exercise":"Ankle circles",
+  "group":"Calves",
+  "type":"reps"
+ },
+ {
+  "exercise":"Wall calf stretch",
+  "group":"Calves",
+  "type":"hold"
+ },
+ {
+  "exercise":"Toe touch calf raises",
+  "group":"Calves",
+  "type":"reps"
+ },
+ {
+  "exercise":"Side neck stretch",
+  "group":"Neck",
+  "type":"hold"
+ },
+ {
+  "exercise":"Side isometric neck stretch",
+  "group":"Neck",
+  "type":"hold"
+ },
+ {
+  "exercise":"Front and back isometric neck stretch",
+  "group":"Neck",
+  "type":"hold"
+ }]
