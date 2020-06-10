@@ -51,7 +51,7 @@
         //add workout timer
         //add list of last exercised muscle groups
     </div>
-        VERSION 2.2
+        VERSION 2.3
     </center>
     <script>
          fetch("data.json")
@@ -76,7 +76,7 @@
         
             function chooseGroups() {
                 document.getElementById("generatedWorkout").innerHTML += "hello";
-                document.getElementById("generatedWorkout").innerHTML += $("#muscleGroups:checked").length;
+                document.getElementById("generatedWorkout").innerHTML += $(".muscleGroup:checked").length;
                 var selected = [];
                 $('.muscleGroup input:checked').each(function() {
                     document.getElementById("generatedWorkout").innerHTML += "yes";
